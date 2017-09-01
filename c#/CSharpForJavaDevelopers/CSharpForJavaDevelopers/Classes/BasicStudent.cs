@@ -1,6 +1,6 @@
 ﻿namespace VegardNet.CSharpForJavaDevelopers.Classes
 {
-    class BasicStudent
+    public class BasicStudent
     {
         private string name;
 
