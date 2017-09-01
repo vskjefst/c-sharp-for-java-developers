@@ -9,12 +9,12 @@
             this.name = name;
         }
 
-        public void setName(string name)
+        public void SetName(string name)
         {
             this.name = name;
         }
 
-        public string getName()
+        public string GetName()
         {
             return name;
         }
