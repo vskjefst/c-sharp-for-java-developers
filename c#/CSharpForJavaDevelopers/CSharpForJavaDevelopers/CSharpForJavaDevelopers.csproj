@@ -36,6 +36,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BasicStudent.cs" />
+    <Compile Include="Interfaces\Reportable.cs" />
+    <Compile Include="Interfaces\ReportGenerator.cs" />
+    <Compile Include="Interfaces\Student.cs" />
+    <Compile Include="Interfaces\Teacher.cs" />
     <Compile Include="Structure\Example.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
