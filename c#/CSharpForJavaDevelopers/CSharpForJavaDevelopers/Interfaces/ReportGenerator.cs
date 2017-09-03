@@ -7,7 +7,6 @@ namespace VegardNet.CSharpForJavaDevelopers.Interfaces
         public void Main(string[] args)
         {
             new List<IReportable>() { new Student(), new Teacher() }.ForEach(r => r.GenerateReport());
-            System.Console.ReadKey();
         }
     }
 }
