@@ -36,7 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BasicStudent.cs" />
-    <Compile Include="Interfaces\Reportable.cs" />
+    <Compile Include="Interfaces\IReportable.cs" />
     <Compile Include="Interfaces\ReportGenerator.cs" />
     <Compile Include="Interfaces\Student.cs" />
     <Compile Include="Interfaces\Teacher.cs" />
