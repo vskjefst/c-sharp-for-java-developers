@@ -16,6 +16,12 @@ namespace VegardNetCSharpForJavaDevelopers.Methods
             Console.WriteLine("Value in method body: " + refValue);
         }
 
+        public static void ReferenceTypeMethodThatChangeMemberValue(ReferenceType nonRefValue)
+        {
+            nonRefValue.value = 6;
+            Console.WriteLine("Value in method body: " + nonRefValue.value);
+        }
+
         public static void ReferenceTypeMethodWithoutRef(ReferenceType nonRefValue)
         {
             nonRefValue = new ReferenceType(6);
@@ -39,6 +45,11 @@ namespace VegardNetCSharpForJavaDevelopers.Methods
             Console.WriteLine("\nrefValue before method call: " + refValue);
             ValueTypeMethodWithRef(ref refValue);
             Console.WriteLine("refValue after method call (can be modified, should be 6): " + refValue);
+
+            ReferenceType nonRefReferenceTypeWithModifiedMemberValue = new ReferenceType(5);
+            Console.WriteLine("\nnonRefReferenceTypeWithModifiedMemberValue before method call: " + nonRefReferenceTypeWithModifiedMemberValue.value);
+            ReferenceTypeMethodThatChangeMemberValue(nonRefReferenceTypeWithModifiedMemberValue);
+            Console.WriteLine("nonRefReferenceTypeWithModifiedMemberValue after method call (modified member value, should be 6): " + nonRefReferenceTypeWithModifiedMemberValue.value);
 
             ReferenceType nonRefReferenceType = new ReferenceType(5);
             Console.WriteLine("\nnonRefReferenceType before method call: " + nonRefReferenceType.value);
