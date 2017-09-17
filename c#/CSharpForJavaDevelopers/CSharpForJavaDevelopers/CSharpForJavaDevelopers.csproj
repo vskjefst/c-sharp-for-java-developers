@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>VegardNetCSharpForJavaDevelopers.Methods.Methods</StartupObject>
+    <StartupObject>VegardNetCSharpForJavaDevelopers.Methods.MethodsRef</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -44,6 +44,7 @@
     <Compile Include="Interfaces\Student.cs" />
     <Compile Include="Interfaces\Teacher.cs" />
     <Compile Include="Methods\Methods.cs" />
+    <Compile Include="Methods\MethodsRef.cs" />
     <Compile Include="Structure\Example.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
