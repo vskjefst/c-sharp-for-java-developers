@@ -2,7 +2,7 @@
 {
     class Methods
     {
-        public int Area(int x, int y)
+        public static int Area(int x, int y)
         {
             return x * y;
         }
