@@ -6,13 +6,13 @@ namespace VegardNetCSharpForJavaDevelopers.Methods
     {
         public static void ValueTypeMethodWithoutRef(int nonRefValue)
         {
-            nonRefValue++;
+            nonRefValue = 6;
             Console.WriteLine("Value in method body: " + nonRefValue);
         }
 
         public static void ValueTypeMethodWithRef(ref int refValue)
         {
-            refValue++;
+            refValue = 6;
             Console.WriteLine("Value in method body: " + refValue);
         }
 
