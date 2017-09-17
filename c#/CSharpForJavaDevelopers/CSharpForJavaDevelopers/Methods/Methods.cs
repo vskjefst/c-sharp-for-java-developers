@@ -1,4 +1,4 @@
-﻿namespace VegardNetCSharpForJavaDevelopers.Methods
+﻿namespace VegardNet.CSharpForJavaDevelopers.Methods
 {
     class Methods
     {
